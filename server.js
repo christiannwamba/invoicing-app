@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const sqlite3 = require("sqlite3").verbose();
 const multipart = require("connect-multiparty");
 const cors = require("cors");
@@ -9,14 +8,15 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
+
 // Set Application Port
 const PORT = process.env.PORT || 3128;
 
 // create express app
 const app = express();
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.set("appSecret", "secretforinvoicingapp");
 
