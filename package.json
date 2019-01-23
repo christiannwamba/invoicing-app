@@ -12,7 +12,6 @@
     "bcrpyt": "^2.0.0",
     "bcrypt": "^1.0.3",
     "bluebird": "^3.5.1",
-    "body-parser": "^1.18.2",
     "connect-multiparty": "^2.1.0",
     "cors": "^2.8.4",
     "express": "^4.16.3",
